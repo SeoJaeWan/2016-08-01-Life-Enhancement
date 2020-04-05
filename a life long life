@@ -1,0 +1,1501 @@
+#include <stdio.h>
+
+#include <stdlib.h>
+
+#include <Windows.h>
+
+#include <time.h>
+
+#include<conio.h>
+
+#define Green SetConsoleTextAttribute( GetStdHandle( STD_OUTPUT_HANDLE ), 10)  
+
+#define White SetConsoleTextAttribute( GetStdHandle( STD_OUTPUT_HANDLE ), 7)
+
+#define Yellow SetConsoleTextAttribute( GetStdHandle( STD_OUTPUT_HANDLE ), 14)
+
+#define Red SetConsoleTextAttribute( GetStdHandle( STD_OUTPUT_HANDLE ), 4)
+
+int coin = 6;
+
+int up = 0;
+
+
+
+
+int main() {
+
+	int a;
+
+	srand((unsigned)time(NULL));     // 기본 설정
+
+	int b = 0;
+
+	system("mode con:cols=98 lines=60");
+
+	Yellow;
+
+	printf("\n\n\n\n\n\n\n                   인!"); Sleep(1000);  printf("                생!"); Sleep(1000); printf("                강!"); Sleep(1000); printf("                화!"); Sleep(1000);
+
+	White;
+
+	printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n                             대화를 진행하려면 아무키나 입력하세요.");
+
+	getch();
+
+	system("cls");
+
+	void cointhrow();
+
+	void level();
+
+	void coinlotto();
+
+	void error();
+
+
+
+
+	Green;
+
+	printf("\n\n나 : 으응...?"); Sleep(1000); printf("  여...여기가 어디지?\n\n");
+
+	Sleep(2500);
+
+	printf("나 : 난 분명 온라인 게임을 하다 갑자기 숨이 막혀 정신을 잃었을 텐데....\n\n");
+
+	Sleep(2500);
+
+	White;
+
+	printf("??? : 정신을 찾았나 보군  .. 내 소개를 하지!  나는!"); Sleep(1000); Red; printf("  인생강화"); Sleep(500); White; printf("의 신이다!(뚜둥!)\n\n");
+
+	Sleep(2500);
+
+	Green;
+
+	printf("나 : .... 지금 꿈을 꾸고있는거야. \n\n");
+
+	Sleep(2500);
+
+	White;
+
+	printf("인생강화의 신 : 허허허허허헣 꿈이 아닐세 넌 저번 인생에서 인류에서 가장! 쓰레기처럼 살았기 때문에 \n");
+
+	Sleep(2500);
+
+	printf("인생강화의 신 : 한번더 기회를 주는거지 바로!"); Sleep(1000); Red; printf(" 인생강화"); Sleep(500); White; printf(" 로말이지!!\n\n");
+
+	Sleep(2500);
+
+	printf("인생강화의 신 : 게임 방법은 도박사를 상대로 코인을 모아서 너의 인생을 강화하는 거지! \n\n");
+
+	Sleep(2500);
+
+	Green;
+
+	printf("나 : 갑자기 무슨 뜬금없는 소리야?\n\n");
+
+	Sleep(2500);
+
+	White;
+
+	printf("인생강화의 신 : 더 말해봤자 벽보고 말하는게 재미있을거 같으니 그럼 게임을 시작하겠네!\n\n");
+
+	Sleep(2500);
+
+	Green;
+
+	printf("나 : ....?\n\n");
+
+	Sleep(2500);
+
+	White;
+
+
+
+
+	printf("                       ※시스템 : 진행하려면 아무키나 누르세요       \n ");
+
+	getch();
+
+
+
+
+	system("cls");
+
+	while (1) {
+
+
+
+
+		if (coin == 0) {
+
+			printf("\n\n\n\n               ※시스템 : 코인이 없습니다. 시공의 폭풍으로 들어가 코인을 가져옵니다.");
+
+			Sleep(10000);
+
+			system("cls");
+
+			coin += 1;
+
+		}
+
+		if (up == 15) {
+
+			Sleep(1000);
+
+			Green;
+
+			printf("\n\n\n\n\n\n\n\n\n\n");
+
+			printf("★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆\n");
+
+			printf("☆                                                                                            ★\n");
+
+			printf("★                                        추카 추카!!                                         ☆\n");
+
+			printf("☆                                                                                            ★\n");
+
+			printf("★                                        추카 추카!!                                         ☆\n");
+
+			printf("☆                                                                                            ★\n");
+
+			printf("★                               설마 이 게임을 클리어 할줄이야...                            ☆\n");
+
+			printf("☆                                                                                            ★\n");
+
+			printf("★                      이게임을 클리어 할 시간에 앞으론 딴일에 집중하세요 ^^                 ☆\n");
+
+			printf("☆                                                                                            ★\n");
+
+			printf("★                                                                      -끝-                  ☆\n");
+
+			printf("☆                                                                                            ★\n");
+
+			printf("★                                                                                            ☆\n");
+
+			printf("☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★☆★\n");
+
+			return 0;
+
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+		Yellow;
+
+		printf("\n                                   돈모아서 인생 강화!                                     \n\n");
+
+		printf("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■\n");
+
+		printf("                                                                                              \n");
+
+		printf("    ㅣ    ========== 돈  벌이  ==========    ㅣ    ========== 인 생 강 화 ! ==========  ㅣ                 \n");
+
+		printf("    ㅣ          코인 개 수 : %d               ㅣ              강 화 도 : %d              ㅣ             \n", coin, up);
+
+		printf("    ㅣ    1. 동전 던지기! (코인 1개 소모)    ㅣ      3. 인 생 강 화 ! (코인 5개 소모)   ㅣ               \n");  
+
+		printf("    ㅣ    2. 복권-인생한방! (코인 3개 소모)  ㅣ    ===================================  ㅣ    \n\n");
+
+		printf("    ㅣ   ================================    ㅣ                         4. 종료 (ㅃㅃ!) ㅣ   \n");
+
+		printf("                                                                                              \n");
+
+		printf("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■\n");
+
+		White;
+
+		printf("도박사 : 자! 뭘 할것인가 자네! 골라보시게! ");
+
+		scanf_s("%d", &a);          //변경할수도?
+
+
+
+
+
+
+
+		switch (a) {
+
+		case 1:
+
+			cointhrow();   // 동전 던지기
+
+			break;
+
+		case 2:
+
+			coinlotto();       // 로또
+
+			break;
+
+		case 3:
+
+			level();     // 강화
+
+			break;
+
+		case 4:
+
+			return 0;           // 종료
+
+		default:
+
+			error();            // 에러!
+
+			break;
+
+		}
+
+	}
+
+}
+
+void cointhrow() {
+
+	int num, gamble;
+
+	if (coin < 1) {
+
+		printf("\n\n도박사 : ㅉㅉ 1코인도 없는 주제에;; 썩 물러가라!\n\n");
+
+		Sleep(2000);
+
+		system("cls");
+
+		return;
+
+	}
+
+	else {
+
+		Yellow;
+
+		printf("\n\n                                  ★☆★1코인 사용!☆★☆\n\n");
+
+		Sleep(1000);
+
+		White;
+
+		printf("도박사 : 동전의 앞 면이 나올지 뒷면이 나올지 선택 해봐. 맞추면 코인이 2개!\n");
+
+		printf("0. 앞 면 \n");
+
+		printf("1. 뒷 면 \n");
+
+		scanf("%d", &gamble);
+
+		//변경할수도?
+
+		if (gamble == 0 || gamble == 1) {
+
+			coin -= 1;
+
+			num = rand() % 2;
+
+			printf("\n");
+
+			printf("                                        3\n\n"); Sleep(1000); printf("                                        2\n\n"); Sleep(1000); printf("                                        1                                        \n\n"); Sleep(1000);
+
+			printf("\n\n                                    띠리링 ---!\n\n");
+
+			Sleep(2000);
+
+			if (num == 0) {
+
+				printf("도박사 : 동전은 앞면이 나왔습니다!!\n\n");
+
+				Sleep(2000);
+
+			}
+
+			else {
+
+				printf("도박사 : 동전은 뒷면이 나왔습니다!!\n\n");
+
+				Sleep(2000);
+
+			}
+
+			if (num == gamble) {
+
+				printf("도박사 : 칫... 성공!\n");
+
+				printf("※시스템 : 코인을 2개 얻었다!\n\n");
+
+				Sleep(2000);
+
+				coin += 2;
+
+				Sleep(4000);
+
+				system("cls");
+
+				return;
+
+			}
+
+			else {
+
+				printf("도박사 : 요시!!! 실패!\n");
+
+				printf("※시스템 : 코인만 날렸다...\n\n");
+
+				Sleep(4000);
+
+				system("cls");
+
+				return;
+
+			}
+
+		}
+
+		else {
+
+			printf("도박사 : 하..ㅉㅉ 처음으로 돌아합니다.");
+
+			Sleep(2000);
+
+			system("cls");
+
+			return;
+
+		}
+
+	}
+
+}
+
+void coinlotto() {
+
+	int num[5], gamble[5];
+
+	int count = 0, i = 0, a = 0, tmp = 0;
+
+	if (coin < 3) {
+
+		printf("\n\n도박사 : 훠이~ 훠이~ 동전 던지기로 돈벌고 오렴\n\n");
+
+		Sleep(1000);
+
+		system("cls");
+
+		return;
+
+	}
+
+	Yellow;
+
+	printf("\n\n                                  ★☆★3코인 사용!☆★☆\n\n");
+
+	Sleep(1000);
+
+	White;
+
+	printf("도박사 : 인생한방의 길로 오신걸 환영합니다. 인생역전! 도전해보라구!\n");
+
+	printf("도박사 : 복권을 쓰는 법을 설명해주지!\n");
+
+	printf("도박사 : 1부터 20까지 숫자중 5개를 하나씩 입력해! 중복은 거절한다구!\n");
+
+	printf("도박사 : 일치 숫자 0개는 -1 , 1개는 코인 3개 , 2개는 5개 , 3개는 8개 , 4개는 15개! \n");
+
+	printf("도박사 : 전부맞추면?!?!?!\n");
+
+	Sleep(1000);
+
+	printf("도박사 : 50개!!!!!!!!!!!!\n");
+
+	while (1) {
+
+		for (i = 0; i < 5; i++) {
+
+			scanf("%d", &gamble[i]);
+
+			if (gamble[i] > 0 && gamble[i] < 21) {}
+
+			else {
+
+				printf("도박사 : 멍청아!! 1부터 20까지의 숫자를 입력하라고!! 돌아가!");
+
+				Sleep(2000);
+
+				system("cls");
+
+				return;
+
+			}
+
+		}
+
+		for (i = 0; i < 4; i++) {
+
+			for (int s = i + 1; s < 5; s++) {
+
+				if (gamble[i] == gamble[s]) {
+
+					printf("도박사 : 하... 중복 꺼져");
+
+					Sleep(2000);
+
+					system("cls");
+
+					return;
+
+				}
+
+			}
+
+		}
+
+		break;
+
+	}
+
+	coin -= 3;
+
+	while (1) {
+
+		tmp = 0;
+
+		for (i = 0; i < 5; i++) {
+
+			num[i] = rand() % 21;
+
+		}
+
+		for (i = 0; i < 4; i++) {
+
+			for (int s = i + 1; s < 5; s++) {
+
+				if (num[i] == num[s]) {
+
+					tmp += 1;
+
+				}
+
+			}
+
+		}
+
+		if (tmp > 0) {
+
+			continue;
+
+		}
+
+		break;
+
+	}
+
+	for (i = 0; i < 5; i++) {
+
+		for (int j = 0; j < 5; j++) {
+
+			if (num[i] == gamble[j]) {
+
+				count += 1;
+
+			}
+
+		}
+
+	}
+
+	printf("\n==========================\n");
+
+	printf("=     복권 번호 공개     =\n");
+
+	printf("==========================\n");
+
+	for (int a = 0; a < 5; a++) {
+
+		Sleep(1000);
+
+		printf(" %d   ", num[a]);
+
+	}
+
+	printf("\n\n");
+
+	Sleep(2000);
+
+	printf("\n=========================\n");
+
+	printf("=     니 번호 공개      =\n");
+
+	printf("=========================\n");
+
+	for (int a = 0; a < 5; a++) {
+
+		Sleep(1000);
+
+		printf(" %d   ", gamble[a]);
+
+	}
+
+	printf("\n\n");
+
+	Sleep(2000);
+
+	switch (count) {
+
+	case 0:
+
+		printf("도박사 : 니가 맞춘 숫자는 0개!!!!\n");
+
+		Sleep(2000);
+
+		printf("도박사 : 코인은 내가 잘 쓰도록 하지 헿헿");
+
+		Sleep(2000);
+
+		coin -= 1;
+
+		system("cls");
+
+		return;
+
+		break;
+
+	case 1:
+
+		printf("도박사 : 니가 맞춘 숫자는 1개!!!!\n");
+
+		Sleep(2000);
+
+		printf("도박사 : 코인은 내가 잘 쓰도록 하지 헿헿");
+
+		Sleep(2000);
+
+		coin -= 3;
+
+		system("cls");
+
+		return;
+
+		break;
+
+	case 2:
+
+		printf("도박사 : 니가 맞춘 숫자는 2개!!!!\n");
+
+		Sleep(2000);
+
+		printf("도박사 : 칫.. 가져가라구...");
+
+		Sleep(2000);
+
+		coin += 5;
+
+		system("cls");
+
+		return;
+
+		break;
+
+	case 3:
+
+		printf("도박사 : 니가 맞춘 숫자는 3개!!!!\n");
+
+		Sleep(2000);
+
+		printf("도박사 : 칫.. 가져가라구...");
+
+		Sleep(2000);
+
+		coin += 8;
+
+		system("cls");
+
+		return;
+
+		break;
+
+	case 4:
+
+		printf("도박사 : 니가 맞춘 숫자는 4개!!!!\n");
+
+		Sleep(2000);
+
+		printf("도박사 : 칫.. 가져가라구...");
+
+		Sleep(2000);
+
+		coin += 15;
+
+		system("cls");
+
+		return;
+
+		break;
+
+	case 5:
+
+		printf("도박사 : 니가 맞춘 숫자는5개!!!!\n");
+
+		Sleep(2000);
+
+		printf("도박사 : 헛 허헛!");
+
+		Sleep(2000);
+
+		printf("도박사 : 허허허헛!");
+
+		Sleep(2000);
+
+		printf("도박사 : 허허허헛!");
+
+		Sleep(2000);
+
+		printf("쨜랑쨜랑~!");
+
+		Sleep(2000);
+
+		printf("도박사 : ☆★☆★☆★당첨☆★☆★☆★");
+
+		Sleep(2000);
+
+		coin += 50;
+
+		system("cls");
+
+		return;
+
+		break;
+
+	}
+
+}
+
+void level() {
+
+	if (coin < 5) {
+
+		printf("\n\n도박사 : 훠이~ 훠이~ 동전 던지기로 돈벌고 오렴\n\n");
+
+		Sleep(1000);
+
+		system("cls");
+
+		return;
+
+	}
+
+	int y;
+
+	int x;
+
+	int num;
+
+	system("cls");
+
+	Yellow;
+
+	printf(" ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■\n");
+
+	printf("■   인생 강화                                                                                ■\n");
+
+	printf("■   1~ 6강은 실패시 유지!                                                                    ■\n");
+
+	printf("■   7~ 15강은 실패시 확률로 강화도 1 하락                                                    ■\n");
+
+	printf("■   16강은 실패시 확률로 강화도 초기화!                                                      ■\n");
+
+	printf("■                                                                                            ■\n");
+
+	printf("■   16강을 성공하면 인생 강화 클리어!                                                        ■\n");
+
+	printf(" ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■\n");
+
+	White;
+
+	printf("\n                인생강화의 신 :             요 맨~    오랜만 인생 강화하려하네     \n");
+
+	printf("                인생강화의 신 :    강화를 하는 순간    코인이 5개 빠져나가는거 알지? \n");
+
+	printf("                인생강화의 신 :     그렇다고 강화가 무조건 성공하는건 아니야 \n");
+
+	printf("                인생강화의 신 :             마지막으로 물어 보겠다!(근엄 진지)    \n   ");
+
+	printf("             인생강화의 신 :                      강화를 하겠는가     \n");
+
+	printf("                인생강화의 신 :              1:   Y                   2:   N           \n\n");
+
+	Green;
+
+	printf("                나 :        (나의 답변은?)                    ");
+
+	scanf("%d", &x);
+
+	if (x == 1) {
+
+		coin -= 5;
+
+		int num;
+
+		system("cls");
+
+		Yellow;
+
+		printf(" ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■\n");
+
+		printf("■   인생 강화                                                                                ■\n");
+
+		printf("■   1~ 6강은 실패시 유지!                                                                    ■\n");
+
+		printf("■   7~ 14강은 실패시 확률로 강화도 1 하락                                                    ■\n");
+
+		printf("■   15강은 실패시 확률로 강화도 초기화!                                                      ■\n");
+
+		printf("■                                                                                            ■\n");
+
+		printf("■   15강을 성공하면 인생 강화 클리어!                                                        ■\n");
+
+		printf(" ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■\n");
+
+		printf("\n");
+
+		White;
+
+		srand((unsigned)time(NULL));
+
+		num = rand() % 10 + 1;
+
+		printf("                                      강화중\n");  Sleep(1000); printf("                                   ■"); Sleep(1000); printf("■"); Sleep(1000); printf("■"); Sleep(1000); printf("■"); Sleep(1000); printf("■"); Sleep(1000); printf("■\n\n\n\n\n"); Sleep(1000);
+
+		if (up == 0) {
+
+			if (num < 7) {
+
+				printf("           강화에 성공하였습니다.\n\n");
+
+				Sleep(1000);
+
+				printf("           백수가 되었다!\n\n");
+
+				Sleep(1000);
+
+				Green;
+
+				up += 1;
+
+				Sleep(4000);
+
+				system("cls");
+
+				return;
+
+			}
+
+			else {
+
+				printf("           강화에 실패했다! 아무일도 없었다! \n");
+
+				Sleep(2000);
+
+				system("cls");
+
+				return;
+
+			}
+
+		}
+
+		else if (up == 1) {
+
+			if (num < 7) {
+
+				printf("           강화에 성공하였습니다.\n\n");
+
+				Sleep(1000);
+
+				printf("           알바생이 되었다!\n\n");
+
+				Sleep(1000);
+
+				up += 1;
+
+				Sleep(4000);
+
+				system("cls");
+
+				return;
+
+			}
+
+			else {
+
+				printf("           강화에 실패했다! 아무일도 없었다! \n");
+
+				Sleep(2000);
+
+				system("cls");
+
+				return;
+
+			}
+
+		}
+
+		else if (up == 2) {
+
+			if (num < 7) {
+
+				printf("           강화에 성공하였습니다.\n\n");
+
+				Sleep(1000);
+
+				printf("           중소기업 계약직이 되었다!\n\n");
+
+				up += 1;
+
+				Sleep(4000);
+
+				system("cls");
+
+				return;
+
+			}
+
+			else {
+
+				printf("           강화에 실패했다! 아무일도 없었다! \n");
+
+				Sleep(2000);
+
+				system("cls");
+
+				return;
+
+			}
+
+		}
+
+		else if (up == 3) {
+
+			if (num < 7) {
+
+				printf("           강화에 성공하였습니다.\n\n");
+
+				Sleep(1000);
+
+				printf("           중소기업 정직원이 되었다!\n\n");
+
+				Sleep(1000);
+
+				Green;
+
+				printf("           나 : .. 한국에서의 인생인가");
+
+				up += 1;
+
+				Sleep(4000);
+
+				system("cls");
+
+				return;
+
+			}
+
+			else {
+
+				printf("           강화에 실패했다! 아무일도 없었다! \n");
+
+				Sleep(2000);
+
+				system("cls");
+
+				return;
+
+			}
+
+		}
+
+		else if (up == 4) {
+
+			if (num < 7) {
+
+				printf("           강화에 성공하였습니다.\n\n");
+
+				Sleep(1000);
+
+				Green;
+
+				printf("           대기업 계약직이 되었다!\n\n");
+
+				up += 1;
+
+				Sleep(4000);
+
+				system("cls");
+
+				return;
+
+			}
+
+			else {
+
+				printf("           강화에 실패했다! 아무일도 없었다! \n");
+
+				Sleep(2000);
+
+				system("cls");
+
+				return;
+
+			}
+
+		}
+
+		else if (up == 5) {
+
+			if (num < 7) {
+
+				printf("           강화에 성공하였습니다.\n\n");
+
+				Sleep(1000);
+
+				printf("           대기업 정직원이 되었다!\n\n");
+
+				up += 1;
+
+				Sleep(4000);
+
+				system("cls");
+
+				return;
+
+			}
+
+			else {
+
+				printf("           강화에 실패했다! 아무일도 없었다! \n");
+
+				Sleep(2000);
+
+				system("cls");
+
+				return;
+
+			}
+
+		}
+
+		else if (up == 6) {
+
+			if (num > 4 || num < 10) {
+
+				printf("           강화에 성공하였습니다.\n\n");
+
+				Sleep(1000);
+
+				printf("           대기업 이사가 되었다!\n\n");
+
+				Sleep(1000);
+
+				Green;
+
+				up += 1;
+
+				Sleep(4000);
+
+				system("cls");
+
+				return;
+
+			}
+
+			else if (num < 5 || num > 1) {
+
+				printf("           강화에 실패했다! 아무일도 없었다! \n");
+
+				Sleep(2000);
+
+				system("cls");
+
+				return;
+
+			}
+
+			else if (num < 2) {
+
+				printf("           강화에 실패했다! 퇴화를 해버렸다..");
+
+				up -= 1;
+
+				Sleep(2000);
+
+				return;
+
+			}
+
+		}
+
+		else if (up == 7) {
+
+			if (num > 4 || num < 10) {
+
+				printf("           강화에 성공하였습니다.\n\n");
+
+				Sleep(1000);
+
+				printf("           대기업 사장이 되었다!\n\n");
+
+				up += 1;
+
+				Sleep(4000);
+
+				system("cls");
+
+				return;
+
+			}
+
+			else if (num < 5 || num > 1) {
+
+				printf("           강화에 실패했다! 아무일도 없었다! \n");
+
+				Sleep(2000);
+
+				system("cls");
+
+				return;
+
+			}
+
+			else if (num < 2) {
+
+				printf("           강화에 실패했다! 퇴화를 해버렸다..");
+
+				up -= 1;
+
+				Sleep(2000);
+
+				system("cls");
+
+				return;
+
+			}
+
+		}
+
+		else if (up == 8) {
+
+			if (num > 4 || num < 10) {
+
+				printf("           강화에 성공하였습니다.\n\n");
+
+				Sleep(1000);
+
+				printf("           대기업 회장이 되었다!\n\n");
+
+				up += 1;
+
+				Sleep(4000);
+
+				system("cls");
+
+				return;
+
+			}
+
+			else if (num < 5 || num > 1) {
+
+				printf("           강화에 실패했다! 아무일도 없었다! \n");
+
+				Sleep(2000);
+
+				system("cls");
+
+				return;
+
+			}
+
+			else if (num < 2) {
+
+				printf("           강화에 실패했다! 퇴화를 해버렸다..");
+
+				up -= 1;
+
+				Sleep(2000);
+
+				system("cls");
+
+				return;
+
+			}
+
+		}
+
+		else if (up == 9) {
+
+			if (num > 4 || num < 10) {
+
+				printf("           강화에 성공하였습니다.\n\n");
+
+				Sleep(1000);
+
+				printf("           국회의원이 되었다!\n\n");
+
+				up += 1;
+
+				Sleep(4000);
+
+				system("cls");
+
+				return;
+
+			}
+
+			else if (num < 5 || num > 1) {
+
+				printf("           강화에 실패했다! 아무일도 없었다! \n");
+
+				Sleep(2000);
+
+				system("cls");
+
+				return;
+
+			}
+
+			else if (num < 2) {
+
+				printf("           강화에 실패했다! 퇴화를 해버렸다..");
+
+				up -= 1;
+
+				Sleep(2000);
+
+				system("cls");
+
+				return;
+
+			}
+
+		}
+
+		else if (up == 10) {
+
+			if (num > 4 || num < 10) {
+
+				printf("           강화에 성공하였습니다.\n\n");
+
+				Sleep(1000);
+
+				printf("           대통령이 되었다!\n\n");
+
+				up += 1;
+
+				Sleep(4000);
+
+				system("cls");
+
+				return;
+
+			}
+
+			else if (num < 5 || num > 1) {
+
+				printf("           강화에 실패했다! 아무일도 없었다! \n");
+
+				Sleep(2000);
+
+				system("cls");
+
+				return;
+
+			}
+
+			else if (num < 2) {
+
+				printf("           강화에 실패했다! 퇴화를 해버렸다..");
+
+				up -= 1;
+
+				Sleep(2000);
+
+				system("cls");
+
+				return;
+
+			}
+
+		}
+
+		else if (up == 11) {
+
+			if (num > 4 || num < 10) {
+
+				printf("           강화에 성공하였습니다.\n\n");
+
+				Sleep(1000);
+
+				printf("           지구를 정복했다!\n\n");
+
+				up += 1;
+
+				Sleep(4000);
+
+				system("cls");
+
+				return;
+
+			}
+
+			else if (num < 5 || num > 1) {
+
+				printf("           강화에 실패했다! 아무일도 없었다! \n");
+
+				Sleep(2000);
+
+				system("cls");
+
+				return;
+
+			}
+
+			else if (num < 2) {
+
+				printf("           강화에 실패했다! 퇴화를 해버렸다..");
+
+				up -= 1;
+
+				Sleep(2000);
+
+				system("cls");
+
+				return;
+
+			}
+
+		}
+
+		else if (up == 12) {
+
+			if (num > 4 || num < 10) {
+
+				printf("           강화에 성공하였습니다.\n\n");
+
+				Sleep(1000);
+
+				printf("           우주로 나가 태양계를 정복했다!\n\n");
+
+				up += 1;
+
+				Sleep(4000);
+
+				system("cls");
+
+				return;
+
+			}
+
+			else if (num < 5 || num > 1) {
+
+				printf("           강화에 실패했다! 아무일도 없었다! \n");
+
+				Sleep(2000);
+
+				system("cls");
+
+				return;
+
+			}
+
+			else if (num < 2) {
+
+				printf("           강화에 실패했다! 퇴화를 해버렸다..");
+
+				up -= 1;
+
+				Sleep(2000);
+
+				system("cls");
+
+				return;
+
+			}
+
+		}
+
+		else if (up == 13) {
+
+			if (num > 4 || num < 10) {
+
+				printf("           강화에 성공하였습니다.\n\n");
+
+				Sleep(1000);
+
+				printf("           은하계를 정복했다!\n\n");
+
+				up += 1;
+
+				Sleep(4000);
+
+				system("cls");
+
+				return;
+
+			}
+
+			else if (num < 5 || num > 1) {
+
+				printf("           강화에 실패했다! 아무일도 없었다! \n");
+
+				Sleep(2000);
+
+				system("cls");
+
+				return;
+
+			}
+
+			else if (num < 2) {
+
+				printf("           강화에 실패했다! 퇴화를 해버렸다..");
+
+				up -= 1;
+
+				Sleep(2000);
+
+				system("cls");
+
+				return;
+
+			}
+
+		}
+
+		else if (up == 14) {
+
+			if (num > 4 || num < 9) {
+
+				printf("           강화에 성공하였습니다.\n\n");
+
+				Sleep(1000);
+
+				printf("           우주를 정복했다!\n\n");
+
+				up += 1;
+
+				Sleep(4000);
+
+				system("cls");
+
+			}
+
+			else if (num < 5 || num > 1) {
+
+				printf("           강화에 실패했다! 아무일도 없었다! \n");
+
+				Sleep(2000);
+
+				system("cls");
+
+				return;
+
+			}
+
+			else if (num < 2) {
+
+				printf("           강화에 실패했다! 퇴화를 해버렸다..");
+
+				up -= 1;
+
+				Sleep(2000);
+
+				system("cls");
+
+				return;
+
+			}
+
+			else if (num > 9) {
+
+				printf("           강화에 실패했다! 이런! 이번인생은 망했다!");
+
+				up = 0;
+
+				Sleep(2000);
+
+				system("cls");
+
+				return;
+
+			}
+
+		}
+
+
+
+
+	}
+
+	else {
+
+		White;
+
+		printf("인생강화의 신 : 처음으로 보내주지!");
+
+		Sleep(2000);
+
+		system("cls");
+
+		return;
+
+	}
+
+}
+
+
+
+
+
+
+
+void error() {
+
+	White;
+
+	printf("※시스템 : 1~4까지 입력해주세요.");
+
+	Sleep(1000);
+
+	system("cls");
+
+	return;
+
+}
+
+void check(int coin) {
+
+	if (coin == 0) {
+
+		White;
+
+		printf("\n\n\n                       ※시스템 : 코인을 모두 잃었습니다. 시공의 폭풍속으로 들어가 코인을 줍고있습니다.");
+
+		Sleep(10000);
+
+		coin += 1;
+
+	}
+
+	return;
+
+}
